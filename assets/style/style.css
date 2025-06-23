@@ -1,0 +1,594 @@
+@charset "utf-8";
+
+/*
+common
+================================================ */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*
+hero
+================================================ */
+.hero {
+  margin-bottom: 107px;
+  width: 100%;
+  background: url(../image/mainVisual_sp.jpg) no-repeat top center / cover;
+  aspect-ratio: 390/450;
+  /* hero__titleの配置のためのposition */
+  position: relative;
+}
+
+.hero__logo {
+  text-align: center;
+  padding-top: 21px;
+  font-size: 1.5rem;
+  letter-spacing: 4.8px;
+  line-height: 1.33;
+}
+
+.hero__title {
+  font-family: "Marcellus", serif;
+  font-size: 2.5625rem;
+  letter-spacing: 12.3px;
+  line-height: 1.31;
+  position: absolute;
+  left: calc(100% * 23/390);
+  bottom: -107px;
+}
+
+.hero__title-lead {
+  display: block;
+  font-family: "Noto Serif JP", serif;
+  margin-top: 6px;
+  font-size: 1.25rem;
+  letter-spacing: 6px;
+  line-height: 1.45;
+}
+
+
+/* hero PC */
+@media screen and (min-width:768px) {
+    .hero {
+      margin-bottom: 0;
+      width: 100%;
+      background: url(../image/mainVisual_pc.jpg) no-repeat top center / cover;
+      aspect-ratio: 1500/720;
+      /* hero__titleの配置のためのposition */
+      position: relative;
+    }
+
+    .hero__logo {
+      padding-top: 29px;
+      font-size: 1.75rem;
+      letter-spacing: 5.6px;
+      line-height: 1.32;
+    }
+
+    .hero__title {
+      font-size: 3.125rem;
+      letter-spacing: 15px;
+      line-height: 1.36;
+      position: absolute;
+      left: calc(100% * 223/1500);
+      bottom: calc(100% * 271/720);
+    }
+
+    .hero__title-lead {
+      display: block;
+      font-family: "Noto Serif JP", serif;
+      margin-top: 6px;
+      font-size: 1.25rem;
+      letter-spacing: 6px;
+      line-height: 1.45;
+    }
+
+} /* @media screen and (min-width:768px */
+
+
+/*
+cta
+================================================ */
+.cta {
+  padding: 50px calc(100% * 16/390);
+}
+
+.cta__inner {
+  width: 100%;
+  background-color: #F0F4FF;
+  padding: 20px calc(100% * 29/358) 34px;
+}
+
+.cta__titleZone-title {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  line-height: 1.44;
+}
+
+.cta__titleZone-price {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.875rem;
+  letter-spacing: 1.4px;
+  line-height: 1.42;
+}
+
+.cta__btn {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto 0;
+  color: #fff;
+  background-color: #46C4DB;
+  border-radius: 34px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.44;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.cta__btn:hover {
+  opacity: 0.6;
+}
+
+.cta__btn--purchase {
+  width: 100%;
+  background-color: #5DD5AB;
+}
+
+
+/* cta PC */
+@media screen and (min-width:768px) {
+    .cta {
+      padding: 48px 0;
+    }
+
+    .cta__inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px calc(100% * 48/1000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cta__titleZone {
+      margin-right: calc(100% * 64/1000);
+    }
+
+    .cta__titleZone-title {
+      font-size: 1.5rem;
+      letter-spacing: 2.4px;
+      line-height: 1.45;
+      text-align: left;
+    }
+
+    .cta__titleZone-price {
+      margin-top: 8px;
+      font-size: 1rem;
+      letter-spacing: 1.6px;
+      line-height: 1.43;
+      text-align: left;
+    }
+
+    .cta__btn {
+      width: calc(100% * 300/1000);
+      max-width: 300px;
+      margin: 0;
+      font-size: 1.125rem;
+    }
+
+    .cta__btn--purchase {
+      width: 100%;
+    }
+
+    form {
+      width: calc(100% * 300/1000);
+      max-width: 300px;
+      margin-left: calc(100% * 32/1000);
+    }
+
+} /* @media screen and (min-width:768px */
+
+
+/*
+concept
+================================================ */
+.concept {
+  padding: 48px calc(100% * 16/390) 0;
+  aspect-ratio: 390 / 680;
+  background: url(../image/concept-image_sp.jpg) no-repeat top center / cover;
+}
+
+.concept__title {
+  color: #fff;
+  font-family: "EB Garamond", serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.concept__title-lead {
+  display: block;
+  margin-top: 8px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25;
+}
+
+.concept__txt {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 2.28;
+}
+
+
+/* concept PC */
+@media screen and (min-width:768px) {
+    .concept {
+      padding: 127px calc(100% * 204/1500) 127px calc(100% * 829/1500);
+      aspect-ratio: 1500 / 550;
+      background: url(../image/concept-image_pc.jpg) no-repeat top center / cover;
+    }
+
+    .concept__title {
+      font-size: 2.375rem;
+      line-height: 1.42;
+    }
+
+    .concept__title-lead {
+      font-size: 1.5rem;
+    }
+
+    .concept__txt {
+      margin-top: 24px;
+      font-size: 0.875rem;
+    }
+
+
+} /* @media screen and (min-width:768px */
+
+
+/*
+voices
+================================================ */
+
+
+
+
+
+
+
+/*
+qa
+================================================ */
+.qa {
+    padding: 32px calc(100% * 16/390);
+    background-image: linear-gradient(to right, #F4FFE8, #C6F0FE);
+}
+
+.qa__title {
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: 1.875rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.06;
+}
+
+.qa__title-lead {
+    display: block;
+    margin-top: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 2;
+}
+
+.qa__block {
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+}
+
+.qa__item {
+    width: 100%;
+    padding: 20px 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.qa__item:not(:first-child) {
+    margin-top: 20px;
+}
+
+.qa__head {
+    display: flex;
+    cursor: pointer;
+}
+
+.qa__head-top {
+    margin-right: 12px;
+    display: block;
+    font-family: "EB Garamond", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 2rem;
+}
+
+.qa__head-txt {
+    margin-right: 16px;
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.86;
+}
+
+.qa__head-btn {
+    display: block;
+    margin-top: 10px;
+    width: 12px;
+    height: 8px;
+    transition: all .4s;
+}
+
+.qa__body {
+    /* qa__itemやqa__headのパディングやマージンの差を加味 */
+    padding: 19px 1px 13px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    /* 閉じているときの状態 */
+    padding: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.qa__body-top {
+    display: block;
+    margin-right: 12px;
+    font-family: "EB Garamond", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 2rem;
+}
+
+.qa__body-txt {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.86;
+}
+
+.qa__body.open {
+    padding: 19px 1px 13px 0;
+    height: auto;
+    opacity: 1;
+}
+
+.qa__head-btn.open {
+    transform: rotate(180deg);
+}
+
+
+/* qa PC */
+@media screen and (min-width:768px) {
+    .qa {
+        padding: 40px 16px ;
+    }
+
+    .qa__title {
+        font-size: 2.8125rem;
+        letter-spacing: 2.25px;
+        line-height: 1.4;
+    }
+
+    .qa__title-lead {
+        margin-top: 8px;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        line-height: 1.6;
+    }
+
+    .qa__block {
+        max-width: 600px;
+        margin: 40px auto 0;
+    }
+
+    .qa__item {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .qa__item:not(:first-child) {
+        margin-top: 24px;
+    }
+
+    /* 変更なし */
+    /* .qa__head {
+    } */
+
+    .qa__head-top {
+        margin-right: 16px;
+        font-size: 1.125rem;
+        letter-spacing: 0.9px;
+        line-height: 1.77rem;
+    }
+
+    .qa__head-txt {
+        margin-right: 14px;
+        font-size: 0.9375rem;
+    }
+
+    .qa__head-btn {
+        margin-top: 10px;
+        width: 12px;
+        height: 8px;
+    }
+
+    .qa__body {
+        /* qa__itemやqa__headのパディングやマージンの差を加味 */
+        padding: 24px 0 0 0;
+
+        /* 閉じているときの状態 */
+        padding: 0;
+    }
+
+    .qa__body-top {
+        margin-right: 16px;
+        font-size: 1.125rem;
+        letter-spacing: 0.9px;
+        line-height: 1.77rem;
+    }
+
+    .qa__body-txt {
+        font-size: 0.9375rem;
+    }
+
+    .qa__body.open {
+        padding: 24px 0 0 0;
+    }
+
+} /* @media screen and (min-width:768px */
+
+
+/*
+cta--under
+================================================ */
+.cta--under {
+  /* cta__topBtn 配置のためのposition */
+  position: relative;
+}
+
+.cta__topBtn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: calc(100% * 16/390);
+  bottom: -10px;
+}
+
+
+/* cta--under PC */
+@media screen and (min-width:768px) {
+    .cta__topBtn {
+      position: absolute;
+      right: calc(100% * 150/1500);
+      bottom: -8px;
+    }
+
+} /* @media screen and (min-width:768px */
+
+
+/*
+footer
+================================================ */
+.footer {
+  padding: 21px calc(100% * 16/390) 24px;
+  background-color: #0071CE;
+}
+
+.footer-logo {
+  color: #fff;
+  text-align: center;
+  font-family: "Marcellus", serif;
+  font-size: 1.75rem;
+  letter-spacing: 5.6px;
+  line-height: 1.32;
+}
+
+.nav {
+  margin-top: 25px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
+}
+
+.nav__item {
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1.41;
+}
+
+.copy {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.copy small {
+  color: #fff;
+  font-size: 0.6875rem;
+  line-height: 1.45;
+}
+
+
+/* footer PC */
+@media screen and (min-width:768px) {
+    .footer {
+      padding: 28px 16px 33px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      /* 縮めたときのレイアウト用 */
+      gap: 20px 0;
+    }
+
+    .footer-logo {
+      font-size: 2rem;
+      letter-spacing: 6.4px;
+      line-height: 1.34;
+      margin-right: calc(100% * 210/1500);
+    }
+
+    .nav {
+      margin-top: 0;
+      margin-right: calc(100% * 155/1500);
+    }
+
+    .nav__list {
+      gap: 0 32px;
+    }
+
+    .nav__item {
+      font-size: 0.875rem;
+      line-height: 1.42;
+    }
+
+    .copy {
+      margin-top: 0;
+    }
+
+    .copy small {
+      font-size: 0.75rem;
+      line-height: 1.41;
+    }
+
+} /* @media screen and (min-width:768px */
