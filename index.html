@@ -19,13 +19,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 
+  <!-- SwiperのCSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
   <link rel="stylesheet" href="assets/style/style.css">
 
+  <!-- SwiperのJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- js -->
    <script src="assets/script/main.js"></script>
 </head>
+
 <body>
   <main class="main">
     <article class="article">
@@ -62,10 +67,73 @@
 
       <section class="voices">
         <h2 class="voices__title">
-          Voices
-          <span class="voices__title-lead">お客様の声</span>
+            Voices
+            <span class="voices__title-lead">お客様の声</span>
         </h2>
-        <!-- カルーセル　テスト施行後に記述 -->
+        <!-- Swiperコンテナ -->
+        <div class="swiper-area">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- スライド1~5(4,5枚目は画像がないため1を仮指定) -->
+                    <div class="swiper-slide">
+                        <div class="swiper-slideItem">
+                            <img class="swiper-slide__image" src="assets/image/voice_pc_01.jpg" alt="">
+                            <p class="swiper-slide__name">Aさん</p>
+                            <p class="swiper-slide__txt">
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slideItem">
+                            <img class="swiper-slide__image" src="assets/image/voice_pc_02.jpg" alt="">
+                            <p class="swiper-slide__name">Bさん</p>
+                            <p class="swiper-slide__txt">
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slideItem">
+                            <img class="swiper-slide__image" src="assets/image/voice_pc_03.jpg" alt="">
+                            <p class="swiper-slide__name">Cさん</p>
+                            <p class="swiper-slide__txt">
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slideItem">
+                            <img class="swiper-slide__image" src="assets/image/voice_pc_01.jpg" alt="">
+                            <p class="swiper-slide__name">Dさん</p>
+                            <p class="swiper-slide__txt">
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slideItem">
+                            <img class="swiper-slide__image" src="assets/image/voice_pc_01.jpg" alt="">
+                            <p class="swiper-slide__name">Eさん</p>
+                            <p class="swiper-slide__txt">
+                                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div><!-- class="swiper" -->
+
+            <!-- ナビゲーションボタン -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div><!-- class="swiper-area" -->
+
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
       </section>
 
       <section class="qa">
@@ -202,3 +270,5 @@ font-family: "EB Garamond", serif;
 <!-- PCはブラウザ幅がコンテンツ幅よりも狭くなってから可変するようにしてください（余白も含めて可変しないようにしてください）。 -->
 
 <!-- SPをperfect pixelで確認する際は横幅をデザインと同じ390pxで確認してください -->
+
+<!-- トップボタンのスクロール -->
