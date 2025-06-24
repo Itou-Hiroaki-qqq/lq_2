@@ -547,6 +547,8 @@ qa
 .qa__head {
     display: flex;
     cursor: pointer;
+    position: relative;
+    width: 100%;
 }
 
 .qa__head-top {
@@ -575,6 +577,8 @@ qa
     width: 12px;
     height: 8px;
     transition: all .4s;
+    position: absolute;
+    right: 0;
 }
 
 .qa__body {
@@ -720,7 +724,7 @@ cta--under
 }
 
 .cta--under .cta__inner {
-  transform: translate(2px, -6px);
+  transform: translate(0px, 1px);
 }
 
 .cta__topBtn {
@@ -738,6 +742,10 @@ cta--under
 @media screen and (min-width:768px) {
     .cta--under {
       padding: 50px calc(100% * 16 / 390) 44px
+    }
+
+    .cta--under .cta__inner {
+      transform: translate(0px, -7px);
     }
 
     .cta__topBtn {
