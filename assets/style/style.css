@@ -36,18 +36,18 @@ hero
   text-align: center;
   padding-top: 21px;
   font-size: 1.5rem;
-  letter-spacing: 4.8px;
+  letter-spacing: .15em;
   line-height: 1.33;
 }
 
 .hero__title {
   font-family: "Marcellus", serif;
   font-size: 2.5625rem;
-  letter-spacing: 12.3px;
+  letter-spacing: .276em;
   line-height: 1.31;
   position: absolute;
   left: calc(100% * 23/390);
-  bottom: -107px;
+  bottom: -109px;
 }
 
 .hero__title-lead {
@@ -55,8 +55,10 @@ hero
   font-family: "Noto Serif JP", serif;
   margin-top: 6px;
   font-size: 1.25rem;
-  letter-spacing: 6px;
+  letter-spacing: .3em;
   line-height: 1.45;
+  /* 調整 */
+  transform: translateY(-3px);
 }
 
 
@@ -74,13 +76,13 @@ hero
     .hero__logo {
       padding-top: 29px;
       font-size: 1.75rem;
-      letter-spacing: 5.6px;
+      letter-spacing: .2em;
       line-height: 1.32;
     }
 
     .hero__title {
       font-size: 3.125rem;
-      letter-spacing: 15px;
+      letter-spacing: .3em;
       line-height: 1.36;
       position: absolute;
       left: calc(100% * 223/1500);
@@ -92,7 +94,7 @@ hero
       font-family: "Noto Serif JP", serif;
       margin-top: 6px;
       font-size: 1.25rem;
-      letter-spacing: 6px;
+      letter-spacing: .3em;
       line-height: 1.45;
     }
 
@@ -116,7 +118,7 @@ cta
   text-align: center;
   font-size: 1.125rem;
   font-weight: 600;
-  letter-spacing: 1.8px;
+  letter-spacing: .1em;
   line-height: 1.44;
 }
 
@@ -124,7 +126,7 @@ cta
   text-align: center;
   margin-top: 5px;
   font-size: 0.875rem;
-  letter-spacing: 1.4px;
+  letter-spacing: .1em;
   line-height: 1.42;
 }
 
@@ -175,7 +177,6 @@ cta
 
     .cta__titleZone-title {
       font-size: 1.5rem;
-      letter-spacing: 2.4px;
       line-height: 1.45;
       text-align: left;
     }
@@ -183,7 +184,6 @@ cta
     .cta__titleZone-price {
       margin-top: 8px;
       font-size: 1rem;
-      letter-spacing: 1.6px;
       line-height: 1.43;
       text-align: left;
     }
@@ -212,12 +212,13 @@ cta
 concept
 ================================================ */
 .concept {
-  padding: 48px calc(100% * 16/390) 0;
+  padding: 41px calc(100% * 16/390) 0;
   aspect-ratio: 390 / 680;
   background: url(../image/concept-image_sp.jpg) no-repeat top center / cover;
 }
 
 .concept__title {
+  text-align: center;
   color: #fff;
   font-family: "EB Garamond", serif;
   font-size: 1.875rem;
@@ -227,15 +228,15 @@ concept
 
 .concept__title-lead {
   display: block;
-  margin-top: 8px;
+  margin-top: 0;
   font-family: "Noto Serif JP", serif;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 2.25;
+  line-height: 1.5;
 }
 
 .concept__txt {
-  margin-top: 20px;
+  margin-top: 14px;
   color: #fff;
   font-size: 0.875rem;
   line-height: 2.28;
@@ -272,7 +273,7 @@ concept
 voices
 ================================================ */
 .voices {
-    padding: 50px calc(100% * 16/390);
+    padding: 53px calc(100% * 16/390) 49px;
 }
 
 .voices__title {
@@ -280,21 +281,22 @@ voices
     font-family: "EB Garamond", serif;
     font-size: 1.875rem;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: .05em;
     line-height: 1.06;
 }
 
 .voices__title-lead {
-    margin-top: 4px;
+  display: block;
+    margin-top: 3px;
     font-family: "Noto Serif JP", serif;
     font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 0.8px;
+    letter-spacing: .05em;
     line-height: 2;
 }
 
 .swiper-area {
-  margin: 36px calc(100% * 39/358) 0;
+  margin: 32px calc(100% * 39/358) 0;
   position: relative;
 }
 
@@ -304,7 +306,7 @@ voices
 
 .swiper-slideItem {
   width: 100%;
-  padding: 28px  calc(100% * 15/280);
+  padding: 28px  calc(100% * 15/280) 21px;
   background-color: #DBF7F9;
 }
 
@@ -314,18 +316,22 @@ voices
   height: 80px;
   border-radius: 50%;
   margin: 0 auto;
+  /* 調整 */
+  transform: translateX(6px);
 }
 
 .swiper-slide__name {
-  margin-top: 8px;
+  margin-top: 2px;
   text-align: center;
   font-size: 0.875rem;
-  letter-spacing: 0.7px;
+  letter-spacing: .05em;
   line-height: 2.28;
+  /* 調整 */
+  transform: translateX(1px);
 }
 
 .swiper-slide__txt {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 0.875rem;
   line-height: 2;
 }
@@ -337,8 +343,7 @@ voices
   .swiper-button-prev {
     background-size: contain;
     background-repeat: no-repeat;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 52%;
     position: absolute;
     width: 32px;
     height: 32px;
@@ -368,8 +373,9 @@ voices
   /* ドット全体の位置や余白を調整 */
   .swiper-pagination {
     position: static; /* ← 重なりを防ぐために固定位置から解除 */
-    margin-top: 16px;
+    margin-top: 11px;
     text-align: center;
+    /* 調整 */
   }
 
   /* すべてのドットの見た目 */
@@ -377,7 +383,7 @@ voices
     width: 9px;               /* サイズ */
     height: 9px;
     background-color: #eee;    /* 通常の色 */
-    margin: 0 4px;             /* ドット間のスペース */
+    margin: 0;             /* ドット間のスペース */
     transition: all 0.3s;
     opacity: 1;
   }
@@ -385,11 +391,11 @@ voices
   /* アクティブなドット */
   .swiper-pagination-bullet-active {
     background-color: #00AFBF; /* アクティブ時の色（ピンク） */
-    transform: scale(1.3);     /* 拡大して目立たせる */
+    /* transform: scale(1.3);     拡大して目立たせる */
   }
 
 
-
+/* voices PC */
 @media screen and (min-width:768px) {
 
   .voices {
@@ -400,14 +406,12 @@ voices
 
   .voices__title {
       font-size: 2.8125rem;
-      letter-spacing: 2.25px;
       line-height: 0.71;
   }
 
   .voices__title-lead {
       margin-top: 8px;
       font-size: 1.25rem;
-      letter-spacing: 1px;
       line-height: 1.6;
   }
 
@@ -432,7 +436,7 @@ voices
 
   .swiper-slide__name {
     font-size: 0.9375rem;
-    letter-spacing: 0.75px;
+    letter-spacing: .05em;
     line-height: 2.13;
   }
 
@@ -481,7 +485,7 @@ voices
 qa
 ================================================ */
 .qa {
-    padding: 32px calc(100% * 16/390);
+    padding: 34px calc(100% * 16/390) 32px;
     background-image: linear-gradient(to right, #F4FFE8, #C6F0FE);
 }
 
@@ -490,7 +494,7 @@ qa
     font-family: "EB Garamond", serif;
     font-size: 1.875rem;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: .05em;
     line-height: 1.06;
 }
 
@@ -499,19 +503,19 @@ qa
     margin-top: 4px;
     font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 0.8px;
+    letter-spacing: .05em;
     line-height: 2;
 }
 
 .qa__block {
-    margin-top: 37px;
+    margin-top: 33px;
     display: flex;
     flex-direction: column;
 }
 
 .qa__item {
     width: 100%;
-    padding: 20px 16px;
+    padding: 17px 16px 16px;
     background-color: #fff;
     cursor: pointer;
 }
@@ -531,8 +535,10 @@ qa
     font-family: "EB Garamond", serif;
     font-size: 1rem;
     font-weight: 500;
-    letter-spacing: 0.8px;
+    letter-spacing: .05em;
     line-height: 2rem;
+    /* 調整 */
+    transform: translateY(-3px);
 }
 
 .qa__head-txt {
@@ -545,7 +551,7 @@ qa
 
 .qa__head-btn {
     display: block;
-    margin-top: 10px;
+    margin-top: 12px;
     width: 12px;
     height: 8px;
     transition: all .4s;
@@ -571,8 +577,10 @@ qa
     font-family: "EB Garamond", serif;
     font-size: 1rem;
     font-weight: 500;
-    letter-spacing: 0.8px;
+    letter-spacing: .05em;
     line-height: 2rem;
+    /* 調整 */
+    transform: translateY(-3px);
 }
 
 .qa__body-txt {
@@ -583,7 +591,7 @@ qa
 }
 
 .qa__body.open {
-    padding: 19px 1px 13px 0;
+    padding: 12px 0 13px;
     height: auto;
     opacity: 1;
 }
@@ -601,14 +609,12 @@ qa
 
     .qa__title {
         font-size: 2.8125rem;
-        letter-spacing: 2.25px;
         line-height: 1.4;
     }
 
     .qa__title-lead {
         margin-top: 8px;
         font-size: 1.25rem;
-        letter-spacing: 1px;
         line-height: 1.6;
     }
 
@@ -633,7 +639,6 @@ qa
     .qa__head-top {
         margin-right: 16px;
         font-size: 1.125rem;
-        letter-spacing: 0.9px;
         line-height: 1.77rem;
     }
 
@@ -659,7 +664,6 @@ qa
     .qa__body-top {
         margin-right: 16px;
         font-size: 1.125rem;
-        letter-spacing: 0.9px;
         line-height: 1.77rem;
     }
 
@@ -680,6 +684,8 @@ cta--under
 .cta--under {
   /* cta__topBtn 配置のためのposition */
   position: relative;
+  /* 調整 */
+  padding: 50px calc(100% * 16 / 390) 51px;
 }
 
 .cta__topBtn {
@@ -688,7 +694,8 @@ cta--under
   height: 40px;
   position: absolute;
   right: calc(100% * 16/390);
-  bottom: -10px;
+  bottom: -1px;
+  cursor: pointer;
 }
 
 
@@ -707,7 +714,7 @@ cta--under
 footer
 ================================================ */
 .footer {
-  padding: 21px calc(100% * 16/390) 24px;
+  padding: 23px calc(100% * 16/390) 24px;
   background-color: #0071CE;
 }
 
@@ -716,12 +723,12 @@ footer
   text-align: center;
   font-family: "Marcellus", serif;
   font-size: 1.75rem;
-  letter-spacing: 5.6px;
+  letter-spacing: .18em;
   line-height: 1.32;
 }
 
 .nav {
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 .nav__list {
@@ -737,7 +744,7 @@ footer
 }
 
 .copy {
-  margin-top: 25px;
+  margin-top: 22px;
   text-align: center;
 }
 
@@ -762,7 +769,6 @@ footer
 
     .footer-logo {
       font-size: 2rem;
-      letter-spacing: 6.4px;
       line-height: 1.34;
       margin-right: calc(100% * 210/1500);
     }

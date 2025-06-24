@@ -55,6 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 
+  // ◆◆◆スクロールトップ制御◆◆◆
+  const topBtn = document.querySelector('.cta__topBtn');
+  topBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+  });
+
+
 
 
 }); //script END
