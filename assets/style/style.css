@@ -76,26 +76,27 @@ hero
     .hero__logo {
       padding-top: 29px;
       font-size: 1.75rem;
-      letter-spacing: .2em;
+      letter-spacing: .14em;
       line-height: 1.32;
     }
 
     .hero__title {
       font-size: 3.125rem;
-      letter-spacing: .3em;
+      letter-spacing: .28em;
       line-height: 1.36;
       position: absolute;
       left: calc(100% * 223/1500);
-      bottom: calc(100% * 271/720);
+      bottom: calc(100% * 272/720);
     }
 
     .hero__title-lead {
       display: block;
       font-family: "Noto Serif JP", serif;
       margin-top: 6px;
-      font-size: 1.25rem;
+      font-size: 1.5625rem;
       letter-spacing: .3em;
       line-height: 1.45;
+      transform: translateY(0px);
     }
 
 } /* @media screen and (min-width:768px */
@@ -165,7 +166,7 @@ cta
     .cta__inner {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 40px calc(100% * 48/1000);
+      padding: 40px 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -246,23 +247,28 @@ concept
 /* concept PC */
 @media screen and (min-width:768px) {
     .concept {
-      padding: 127px calc(100% * 204/1500) 127px calc(100% * 829/1500);
+      padding: 126px calc(100% * 248/1500) 123px calc(100% * 822/1500);
       aspect-ratio: 1500 / 550;
       background: url(../image/concept-image_pc.jpg) no-repeat top center / cover;
     }
 
     .concept__title {
+      text-align: left;
       font-size: 2.375rem;
       line-height: 1.42;
+      /* 調整 */
+      transform: translateX(7px);
     }
 
     .concept__title-lead {
+      margin-top: 2px;
       font-size: 1.5rem;
     }
 
     .concept__txt {
-      margin-top: 24px;
+      margin-top: 19px;
       font-size: 0.875rem;
+              transform: translateX(7px);
     }
 
 
@@ -399,7 +405,7 @@ voices
 @media screen and (min-width:768px) {
 
   .voices {
-      padding: 80px 16px;
+      padding: 92px 16px 58px;
       max-width: 1156px;
       margin: 0 auto;
   }
@@ -410,40 +416,49 @@ voices
   }
 
   .voices__title-lead {
-      margin-top: 8px;
+      margin-top: 19px;
       font-size: 1.25rem;
       line-height: 1.6;
   }
 
   .swiper-area {
-    margin: 40px calc(100% * 110/1156) 0;
+    margin: 40px 74px;
     position: relative;
   }
 
   .swiper-wrapper {
     width: 100%;
+    /* 調整 */
+    gap: 0 6px;
   }
 
   .swiper-slideItem {
     width: 100%;
-    padding: 40px  calc(100% * 16/300);
+    padding: 33px  16px;
   }
 
   .swiper-slide__image {
     width: 100px;
     height: 100px;
+    /* 調整 */
+    transform: translate(-7px, 7px);
   }
 
   .swiper-slide__name {
     font-size: 0.9375rem;
     letter-spacing: .05em;
     line-height: 2.13;
+    /* 調整 */
+    transform: translate(-6px, 5px);
   }
 
   .swiper-slide__txt {
     margin-top: 16px;
     font-size: 1rem;
     line-height: 1.75;
+    padding-right: 15px;
+    /* 調整 */
+    transform: translate(-1px, -2px);
   }
 
 
@@ -459,19 +474,24 @@ voices
     .swiper-button-next {
       background-image: url(../image/arrow-right_pc.svg);
       right: -88px;
+      /* 調整 */
+      transform: translateY(-7px);
     }
 
     /* 左（前へ）ボタンに画像を設定 */
     .swiper-button-prev {
       background-image: url(../image/arrow-left_pc.svg);
       left: -88px;
+      /* 調整 */
+      transform: translateY(-7px);
     }
 
 
     /* ページネーションのスタイル */
     /* ドット全体の位置や余白を調整 */
     .swiper-pagination {
-      margin-top: 24px;
+      /* 調整 */
+      transform: translate(0px, -21px);
     }
 
 } /* @media screen and (min-width:768px */
@@ -610,6 +630,8 @@ qa
     .qa__title {
         font-size: 2.8125rem;
         line-height: 1.4;
+        /* 調整 */
+        transform: translate(3px, -4px);
     }
 
     .qa__title-lead {
@@ -620,7 +642,7 @@ qa
 
     .qa__block {
         max-width: 600px;
-        margin: 40px auto 0;
+        margin: 31px auto 0;
     }
 
     .qa__item {
@@ -629,11 +651,20 @@ qa
     }
 
     .qa__item:not(:first-child) {
-        margin-top: 24px;
+        margin-top: 20px;
+    }
+
+    .qa__item:nth-of-type(4) {
+      margin-top: 18px;
+    }
+
+    .qa__item:nth-of-type(5) {
+      margin-top: 18px;
     }
 
     /* 変更なし */
     /* .qa__head {
+
     } */
 
     .qa__head-top {
@@ -643,7 +674,7 @@ qa
     }
 
     .qa__head-txt {
-        margin-right: 14px;
+        margin-right: 57px;
         font-size: 0.9375rem;
     }
 
@@ -672,7 +703,7 @@ qa
     }
 
     .qa__body.open {
-        padding: 24px 0 0 0;
+        padding: 16px 0 0 0;
     }
 
 } /* @media screen and (min-width:768px */
@@ -688,6 +719,10 @@ cta--under
   padding: 50px calc(100% * 16 / 390) 51px;
 }
 
+.cta--under .cta__inner {
+  transform: translate(2px, -6px);
+}
+
 .cta__topBtn {
   display: block;
   width: 40px;
@@ -701,10 +736,14 @@ cta--under
 
 /* cta--under PC */
 @media screen and (min-width:768px) {
+    .cta--under {
+      padding: 50px calc(100% * 16 / 390) 44px
+    }
+
     .cta__topBtn {
       position: absolute;
       right: calc(100% * 150/1500);
-      bottom: -8px;
+      bottom: 0;
     }
 
 } /* @media screen and (min-width:768px */
